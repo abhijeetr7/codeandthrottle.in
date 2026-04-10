@@ -1,0 +1,28 @@
+  @keyframes reveal {
+        from {
+          transform: translateY(30px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      .animate-reveal {
+        animation: reveal 0.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      }
+      .delay-200 {
+        animation-delay: 0.2s;
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .theme-track {
+        --primary: #ff6a00;
+      }
+      .theme-street {
+        --primary: #3b82f6;
+      }
